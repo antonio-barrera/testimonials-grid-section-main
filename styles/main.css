@@ -26,11 +26,8 @@ html {
 }
 
 body {
-    font-size: 1.3rem;
     font-weight: 500;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    line-height: 1.5;
-    color: var(--normal-white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +39,7 @@ body {
     display: grid;
     grid-template-columns: 33rem;
     grid-row-gap: 2.5rem;
-    margin: 5rem;
+    margin: 5rem auto;
 }
 
 .testimonial {
@@ -61,7 +58,7 @@ body {
 
 .person-image {
     width: 3rem;
-    height: 3rem;
+    height: auto;
     border: solid 0.25rem var(--light-gray);
     border-radius: 50%;
 }
@@ -88,20 +85,30 @@ body {
 }
 
 .testimonial-quote {
+    font-size: 1.3rem;
+    line-height: 1.5;
     opacity: 0.7;
-    margin-right: 2.2rem;
 }
 
-#first-testimonial {background: var(--moderate-violet);}
+#first-testimonial {
+    background: var(--moderate-violet);
+    color: var(--normal-white);
+}
 
-#second-testimonial {background: var(--dark-grayish-blue);}
+#second-testimonial {
+    background: var(--dark-grayish-blue);
+    color: var(--normal-white);
+}
 
 #third-testimonial {
     background: var(--normal-white);
     color: #000;
 }
 
-#fourth-testimonial {background: var(--dark-blackish-blue);}
+#fourth-testimonial {background: var(
+    --dark-blackish-blue);
+    color: var(--normal-white);
+}
 
 #fifth-testimonial {
     background: var(--normal-white);
