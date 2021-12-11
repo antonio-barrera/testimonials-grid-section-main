@@ -1,4 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blackish-blue: hsl(219, 29%, 14%);
+    --normal-white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.5;
+    color: var(--normal-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-grayish-blue);
+}
+
+.testimonials-section {
+    display: grid;
+    grid-template-columns: 33rem;
+    grid-row-gap: 2.5rem;
+    margin: 5rem;
+}
+
+.testimonial {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 3rem 3rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+}
+
+.person-image {
+    width: 3rem;
+    height: 3rem;
+    border: solid 0.25rem var(--light-gray);
+    border-radius: 50%;
+}
+
+.person-info {
+    margin-left: 1.5rem;
+    line-height: 1.25;
+}
+
+.person-name {
+    font-size: 1.3rem;
+}
+
+.person-state {
+    font-size: 1.15rem;
+    opacity: 0.5;
+}
+
+.testimonial-experience {
+    font-weight: 600;
+    font-size: 2.06rem;
+    line-height: 1.2;
+    margin: 1.5rem auto;
+}
+
+.testimonial-quote {
+    opacity: 0.7;
+    margin-right: 2.2rem;
+}
+
+#first-testimonial {background: var(--moderate-violet);}
+
+#second-testimonial {background: var(--dark-grayish-blue);}
+
+#third-testimonial {
+    background: var(--normal-white);
+    color: #000;
+}
+
+#fourth-testimonial {background: var(--dark-blackish-blue);}
+
+#fifth-testimonial {
+    background: var(--normal-white);
+    color: #000;
+}
 
 .attribution { 
     font-size: 11px; 
