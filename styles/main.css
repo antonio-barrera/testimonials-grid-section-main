@@ -115,6 +115,25 @@ body {
     color: #000;
 }
 
+@media (min-width: 375px), (orientation: landscape) {
+    .testimonials-section {
+        grid-template-columns: repeat(4, 25.5rem);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "one one two three"
+        "four five five three";
+        grid-gap: 2.5rem;
+    }
+    .testimonial {
+        padding-bottom: 0rem;
+    }
+    #first-testimonial {grid-area: one;}
+    #second-testimonial {grid-area: two;}
+    #third-testimonial {grid-area: four;}
+    #fourth-testimonial {grid-area: five;}
+    #fifth-testimonial {grid-area: three;}
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center;
