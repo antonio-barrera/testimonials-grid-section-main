@@ -91,7 +91,9 @@ body {
 }
 
 #first-testimonial {
-    background: var(--moderate-violet);
+    background: url('../images/bg-pattern-quotation.svg'), var(--moderate-violet);
+    background-repeat: no-repeat, repeat;
+    background-position: top right 8rem;
     color: var(--normal-white);
 }
 
@@ -123,9 +125,6 @@ body {
         "top-left     top-left       top-middle     right"
         "bottom-left  bottom-middle  bottom-middle  right";
         grid-gap: 2.5rem;
-    }
-    .testimonial {
-        padding-bottom: 0rem;
     }
     #first-testimonial {grid-area: top-left;}
     #second-testimonial {grid-area: top-middle;}
